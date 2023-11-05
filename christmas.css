@@ -44,6 +44,29 @@ body {
     cursor: pointer;
 }
 
+.dropdown {
+    position: absolute;
+    right: 0.5vw;
+    top: 6.5vw;
+    font-size: 1.56vw;
+    color: red;
+    background-color: white;
+    opacity: 0.99;
+    width: 20vw;
+    display: none;
+
+    
+}
+
+.option {
+    text-align: center;
+    border-bottom: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    cursor: pointer;
+}
 
 
 
