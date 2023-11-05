@@ -10,6 +10,7 @@ body {
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
     background-color: rgba(223, 176, 186, 0.8);
     position: fixed;
     top: 0;
@@ -32,3 +33,18 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     text-decoration: underline;
 }
+
+.red {
+    position: absolute;
+    right : 1.5vw;
+}
+
+.redline {
+    height: 4vh;
+    cursor: pointer;
+}
+
+
+
+
+
