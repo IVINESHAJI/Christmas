@@ -68,6 +68,13 @@ body {
     cursor: pointer;
 }
 
+.close {
+        height: 6vh;
+        cursor: pointer;
+        position :relative;
+        display: none;
+        background: none;
+}
 
 
 
