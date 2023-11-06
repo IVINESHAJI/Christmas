@@ -54,18 +54,23 @@ body {
     opacity: 0.99;
     width: 20vw;
     display: none;
-
+    font-family:'Playfair Display', serif;
+    font-weight: bold;
     
 }
 
 .option {
     text-align: center;
     border-bottom: 2px solid red;
+    font-weight: bolder;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 15vh;
     cursor: pointer;
+    background-image: url("snowflakes.jpg");
+    opacity: 0.9;
+
 }
 
 .close {
