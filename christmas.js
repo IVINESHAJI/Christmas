@@ -34,21 +34,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     }, 1000);   
+
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
     
-    let loginout = document.querySelector(".log");
-    let sec = document.querySelector('section');
+    let close_1 = document.querySelector(".close_1");
 
-    loginout.addEventListener('click', () => {
-        sec.style.display = 'flex';
-        optclick.style.right = '-20vw';
-        optclicked = false;
+    close_1.addEventListener('click', () => {
+        window.location.href = "christmas.html";
     });
-
-    let close_1 = document.querySelector('.close_1');
-
-    close_1.addEventListener('click',() =>  {
-        window.location.href = 'christmas.html';
-    });
-    
 });
 

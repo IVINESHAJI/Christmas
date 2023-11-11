@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Login</title>
     <link rel="stylesheet" href="christmas.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,15 +15,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
 
     <script src="christmas.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </head>
+
 <body>
     <nav class="navbar">
-        <img src="logo.png" alt="mgocsm logo" class="logo">
+        <img src="logo.png" alt="logo" class="logo">
 
         <div class="heading">
             <div>Alpha Stores</div>
@@ -54,50 +57,34 @@
         </div>
     </nav>
 
-   
-    <div class="slider">
-        <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-    
-            <div class="slide first">
-                <img src="image1.jpg" alt="">
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <div class="close_1"><ion-icon name="close-outline"></ion-icon></div>
+                <form action="#" method="post">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me <a href="#">Forget Password</a></label>
+                    </div>
+                    <button>Login</button>
+                    <div class="register">
+                        <p>Don't Have an account <a href="#">Register</a></p>
+                    </div>
+                </form>
             </div>
-            <div class="slide">
-                <img src="image2.avif" alt="">
-            </div>
-            <div class="slide">
-                <img src="image3.jpg" alt="">
-            </div>
-    
-         
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-            </div>
-            
         </div>
-        
-        <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-        </div>
-        
-    </div>
 
-    <div class="para_2">
-        Welcome to <b>Alpha Stores</b>, your premier destination for all your shopping needs! Discover a world of endless possibilities
-        as you explore our carefully curated collection of the latest trends in fashion, electronics, home decor, and more. At
-        <b>Alpha Stores</b>, we strive to bring you a seamless online shopping experience with a commitment to quality, style, and
-        customer satisfaction. Browse through our diverse range of products, sourced from top brands and emerging designers,
-        ensuring you find the perfect items to suit your lifestyle. Whether you're updating your wardrobe, enhancing your home,
-        or staying ahead in the tech game, we've got you covered. Enjoy hassle-free shopping with our user-friendly interface,
-        secure payment options, and swift delivery. Join our community of savvy shoppers and elevate your online shopping
-        experience with <b>Alpha Stores</b> today!
-    </div>
+    </section>
 
 <footer class="foot">
     <div class="footer-nav">
@@ -109,12 +96,12 @@
 
     <div class="social-media">
         <div>
-        <ion-icon name="logo-facebook"></ion-icon>
-        <a href="#">Facebook</a>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <a href="#">Facebook</a>
         </div>
         <div>
-        <ion-icon name="logo-twitter"></ion-icon>
-        <a href="#">Twitter</a>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <a href="#">Twitter</a>
         </div>
     </div>
 
@@ -122,8 +109,7 @@
         <p>&copy; 2023 Your Alpha Stores. All rights reserved.</p>
     </div>
 </footer>
-
-
+    
 </body>
 
 </html>
