@@ -1,0 +1,37 @@
+body {
+    padding-top: 20vh;
+}
+
+.about {
+    margin-left: 2vw;
+    margin-right: 2vw;
+
+}
+
+.abouthead {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 5vw;
+    margin-bottom: 4vh;
+}
+
+.content {
+    font-family: 'Oswald', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 2vw;
+    margin-top: 20vh;
+    
+}
+
+.logo_1{
+    height: 20vw;
+    padding-left: 1vw;
+    border-radius: 60%;
+}
+
+.content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

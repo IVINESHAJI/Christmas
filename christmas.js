@@ -1,28 +1,34 @@
 let optclicked = false;
+let clicked = false;
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    let red = document.querySelector('.redline');
-    let optclick = document.querySelector('.dropdown');
-    let close = document.querySelector('.close');
-    red.addEventListener('click',() => {
-        if (!optclicked) {
-            optclicked = true;
-            optclick.style.display = "block";
-            red.style.display = "none";
-            close.style.display = "block";
-        }
+    setInterval(() => {
 
-    });
+        let red = document.querySelector('.redline');
+        let optclick = document.querySelector('.dropdown');
+        let close = document.querySelector('.close');
 
-    close.addEventListener("click", () => {
-        if(optclicked) {
-            optclicked = false;
-            optclick.style.display = "none";
-            red.style.display = "block";
-            close.style.display = "none";
-        }
-    });
+        red.addEventListener('click',() => {
+            if (!optclicked) {
+                optclicked = true;
+                optclick.style.right = "0";
+                red.style.display = "none";
+                close.style.display = "block";
+            }   
+        });
+            
+        close.addEventListener("click", () => {
+            if(optclicked) {
+                optclicked = false;
+                optclick.style.right = "-20vw";
+                red.style.display = "block";
+                close.style.display = "none";
+            }
+        });
 
-
+    }, 1000);   
+    
+    
 });
+
